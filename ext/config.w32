@@ -1,0 +1,7 @@
+ARG_ENABLE("secureblackbox", "secureblackbox support", "yes");
+
+if (PHP_SECUREBLACKBOX == "yes") {
+	EXTENSION("secureblackbox", "php_secureblackbox.c");
+	AC_DEFINE("HAVE_SECUREBLACKBOX", 1, "secureblackbox support");
+	ADD_FLAG('LIBS_SECUREBLACKBOX', 'secureblackbox.lib secureblackbox20.lib');
+}

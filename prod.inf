@@ -1,0 +1,9 @@
+part=SBPF-A
+version=20.0
+build=7628
+time=11/19/2020 15:54:08
+prod=SecureBlackbox 2020
+regkey=nsoftware
+
+
+licpath=./demos 
